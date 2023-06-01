@@ -57,3 +57,16 @@ class CuentaBancaria{
 const cuenta1= new CuentaBancaria()
 console.log(cuenta1.retirar(4))
 console.log(cuenta1.obtener())
+
+const axios = require('axios');
+
+
+axios.get('https://randomuser.me/api/')
+  .then(data => {
+    // Hacer algo con los datos recibidos
+    console.log(data.data);
+  })
+  .catch(error => {
+    // Manejar errores
+    console.log(error);
+  });
